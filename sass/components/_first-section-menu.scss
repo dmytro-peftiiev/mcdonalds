@@ -1,0 +1,120 @@
+.nasze-menu {
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-image: url(../img/naszemenu.jpg);
+    background-size: cover;
+    padding: 20px;
+    font-size: 48px;
+    color: $secondColor;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 8px 5px -5px $primaryColor;
+}
+
+.product-card__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 20px / 4);
+    margin: 3px;
+    padding: 0px;
+    cursor: default;
+}
+
+.hover-area:hover {
+    .product-card__image {
+        transform: scale(110%);
+    }
+
+    .product-card__price {
+        transform: translateY(0%);
+        background-color: #ffffff78;
+    }
+
+    .product-card__name {
+        background-color: #ffb300;
+        border-top: 1px solid #ffb300;
+    }
+}
+
+.product-card {
+    position: relative;
+    width: 380.4px;
+
+
+    overflow: hidden;
+}
+
+.product-card__image {
+    margin: 0px;
+    transform: scale(102%);
+    transition: transform 900ms linear;
+}
+
+.product-card__price {
+    position: absolute;
+    background-color: $secondColor;
+    font-size: 40px;
+    color: $primaryColor;
+    font-weight: 300;
+    margin: 0px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
+.product-card__name {
+    background-color: $secondColor;
+    border: 1px solid transparent;
+    font-size: 30px;
+    color: $primaryColor;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    transition: background-color 300ms linear, border 300ms linear;
+}
+
+
+
+
+
+.breakfest-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1%;
+    margin-right: 1%;
+
+    .topgap {
+        margin: 0;
+        padding-top: 0;
+    }
+}
+
+.breakfest__time {
+    font-size: 17px;
+    font-weight: 200;
+    color: $primaryColor;
+}
+
+.search-rest {
+    font-size: 17px;
+    font-weight: 300;
+    color: #525252;
+
+    &:hover {
+        opacity: 70%;
+    }
+
+    &:focus {
+        opacity: 70%;
+    }
+}

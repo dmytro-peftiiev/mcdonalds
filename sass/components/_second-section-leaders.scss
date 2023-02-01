@@ -1,0 +1,231 @@
+// GENERAL---------------------------------------------------
+.kierownicy {
+    display: flex;
+    justify-content: space-between;
+    max-width: 96vw;
+    padding: 0;
+    padding-top: 1%;
+    margin: 10px;
+    cursor: default;
+}
+
+.kierownik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(55deg, rgba(255, 255, 255, 0) 17%, rgba(255, 210, 0, 1) 51%);
+    border-radius: 57% 43% 100% 0% / 100% 57% 43% 0%;
+}
+
+// FIRST LID---------------------------------------------------
+.first-kierownik__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(107%);
+    transition: transform 600ms linear;
+    position: relative;
+
+    &:hover {
+        transform: scale(115%);
+    }
+
+    &:hover .first-kierownik__info {
+        visibility: inherit;
+        background-color: $secondColor;
+        opacity: 100%;
+        width: 90%;
+        height: max-content;
+        padding: 5px 5px 5px 10px;
+        right: -57%;
+        z-index: -1;
+        font-size: 20px;
+        color: $primaryColor;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 8px 8px 24px -3px $primaryColor;
+        position: absolute;
+    }
+}
+
+.first-kierownik__info {
+    visibility: hidden;
+    background-color: $secondColor;
+    position: absolute;
+    opacity: 0%;
+    width: 90%;
+    padding: 5px 5px 5px 10px;
+    right: -57%;
+    height: max-content;
+    z-index: -1;
+    font-size: 20px;
+    color: $primaryColor;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 24px -3px $primaryColor;
+    transition: opacity 600ms linear;
+}
+
+.first-kierownik__name {
+    background-color: $greenColor;
+    color: $secondColor;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+.first-kierownik__place {
+    background-color: $secondColor;
+    color: $primaryColor;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}
+
+// SECOND LID---------------------------------------------------
+.second-kierownik__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(107%);
+    transition: transform 600ms linear;
+    position: relative;
+
+    &:hover {
+        transform: scale(115%);
+    }
+
+    &:hover .second-kierownik__info {
+        visibility: inherit;
+        background-color: $secondColor;
+        opacity: 100%;
+        width: 90%;
+        height: max-content;
+        padding: 5px 5px 5px 10px;
+        right: -55%;
+        z-index: -1;
+        font-size: 20px;
+        color: $primaryColor;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 8px 8px 24px -3px $primaryColor;
+        position: absolute;
+    }
+}
+
+.second-kierownik__info {
+    visibility: hidden;
+    background-color: $secondColor;
+    position: absolute;
+    opacity: 0%;
+    width: 90%;
+    padding: 5px 5px 5px 10px;
+    right: -55%;
+    height: max-content;
+    z-index: -1;
+    font-size: 20px;
+    color: $primaryColor;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 24px -3px $primaryColor;
+    transition: opacity 600ms linear;
+}
+
+.second-kierownik__name {
+    background-color: $greenColor;
+    color: $secondColor;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+.second-kierownik__place {
+    background-color: $secondColor;
+    color: $primaryColor;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}
+
+// THIRD LID---------------------------------------------------
+.third-kierownik__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(107%);
+    transition: transform 600ms linear;
+    position: relative;
+
+    &:hover {
+        transform: scale(115%);
+    }
+
+    &:hover .third-kierownik__info {
+        visibility: inherit;
+        background-color: $secondColor;
+        opacity: 100%;
+        width: 90%;
+        height: max-content;
+        padding: 5px 5px 5px 10px;
+        left: -48%;
+        z-index: -1;
+        font-size: 20px;
+        color: $primaryColor;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 8px 8px 24px -3px $primaryColor;
+        position: absolute;
+    }
+}
+
+.third-kierownik__info {
+    visibility: hidden;
+    background-color: $secondColor;
+    position: absolute;
+    opacity: 0%;
+    width: 90%;
+    padding: 5px 5px 5px 10px;
+    left: -48%;
+    height: max-content;
+    z-index: -1;
+    font-size: 20px;
+    color: $primaryColor;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 24px -3px $primaryColor;
+    transition: opacity 600ms linear;
+
+    .talk {
+        font-style: italic;
+    }
+}
+
+.third-kierownik__name {
+    background-color: $greenColor;
+    color: $secondColor;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+.third-kierownik__place {
+    background-color: $secondColor;
+    color: $primaryColor;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}

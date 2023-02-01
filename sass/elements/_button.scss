@@ -1,0 +1,69 @@
+button {
+    background-color: $secondColor;
+    border: 1px solid $akcentColor;
+    padding: 8px;
+    position: relative;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: $akcentColor;
+    }
+
+    &:focus {
+        background-color: $akcentColor;
+    }
+
+    &:hover p {
+        color: $secondColor;
+    }
+
+    &:focus p {
+        color: $secondColor;
+    }
+
+    &:hover svg {
+        opacity: 1;
+    }
+
+    &:focus svg {
+        opacity: 1;
+    }
+
+    & p {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: .5s;
+        color: $akcentColor;
+    }
+
+    & svg {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        transition: 0.5s;
+        width: 20px;
+        height: 20px;
+        fill: $secondColor;
+    }
+}
+
+.min--button {
+    margin-top: 1em;
+    transition: all 300ms linear;
+    background-color: $secondColor;
+    opacity: 90%;
+
+    &:hover {
+        background-color: $akcentColor;
+        color: #ffffff;
+        opacity: 100%;
+
+    }
+}

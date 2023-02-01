@@ -1,0 +1,143 @@
+header {
+  position: relative;
+  background-color: $secondColor;
+  padding: 10px;
+  width: auto;
+  height: 100px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// NAVIGATION
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav__item {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+  border-bottom: 2px $primaryColor transparent;
+  color: $primaryColor;
+
+  &:hover {
+    border-bottom: 2px $primaryColor solid;
+  }
+
+  &:focus {
+    border-bottom: 2px $primaryColor solid;
+  }
+}
+
+// LOGO
+.logo__set {
+  position: absolute;
+  left: calc(50% - 50px);
+  opacity: 100%;
+  transition: opacity 100ms linear;
+
+
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:focus {
+    opacity: 70%;
+  }
+}
+
+// CONTAKTBLOCK
+.contact-block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-block__facebook {
+  display: block;
+  fill: black;
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    fill: rgba(5, 12, 213, 0.8);
+  }
+
+  &:focus {
+    fill: rgba(5, 12, 213, 0.8);
+  }
+}
+
+.contact-block__instagram {
+  display: block;
+  fill: black;
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    fill: rgba(169, 51, 1, 0.8);
+  }
+
+  &:focus {
+    fill: rgba(169, 51, 1, 0.8);
+  }
+}
+
+.contact-block__youtube {
+  display: block;
+  fill: black;
+  width: 25px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+
+  &:hover {
+    fill: rgba(255, 0, 0, 0.8);
+  }
+
+  &:focus {
+    fill: rgba(255, 0, 0, 0.8);
+  }
+}
+
+.button--header {
+  width: 7.0em;
+  height: 1.9em;
+
+  &:hover p {
+    left: 0.6em;
+  }
+
+  &:focus p {
+    left: 0.6em;
+  }
+
+  &:hover svg {
+    right: 0.3em;
+  }
+
+  &:focus svg {
+    right: 0.1em;
+  }
+
+  & p {
+    top: 0.3em;
+    left: 1.2em;
+  }
+
+  & svg {
+    top: 0.4em;
+    right: 0.5em;
+  }
+}
