@@ -24,45 +24,49 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a class="logo__set" href="index.html"><img src="./img/logo1.png" alt="logo" width="100" height="80" /></a>
-        <div class="header-flex">
-            <nav>
-                <ul class="nav">
-                    <li><a class="nav__item" href="#menu">Produkty</a></li>
-                    <li><a class="nav__item" href="#leaders">Liderzy</a></li>
-                    <li><a class="nav__item" href="#mcdelivery">McDelivery</a></li>
-                    <li><a class="nav__item" href="#job">Praca</a></li>
-                </ul>
-            </nav>
-            <div class="contact-block">
-                <a href="https://www.facebook.com/McDonaldsPolska/" target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="contact-block__facebook">
-                        <use href="./img/icon.svg#facebook"></use>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/mamsmakanamaka/" target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="contact-block__instagram">
-                        <use href="./img/icon.svg#instagram"></use>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/user/McDonaldsPoland" target="_blank"
-                    rel="noopener noreferrer nofollow">
-                    <svg class="contact-block__youtube">
-                        <use href="./img/icon.svg#youtube"></use>
-                    </svg>
-                </a>
-                <button type="button" class="open_modal button--header" data-modal>
-                    <p>KONTAKT</p>
-                    <svg>
-                        <use href="./img/icon.svg#mail"></use>
-                    </svg>
-                </button>
-            </div>
+        <nav>
+            <span class="hamburger__button"></span>
+            <ul class="nav">
+                <li><a class="nav__item" href="#menu">Produkty</a></li>
+                <li><a class="nav__item" href="#leaders">Liderzy</a></li>
+                <li><a class="nav__item" href="#mcdelivery">McDelivery</a></li>
+                <li><a class="nav__item" href="#job">Praca</a></li>
+            </ul>
+        </nav>
+        <a class="logo__set" href="index.html"><img src="./img/logo1.png" alt="logo" width="50px" height="40px" /></a>
+        <div class="contact-block">
+            <a href="https://www.facebook.com/McDonaldsPolska/" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="contact-block__facebook contact--hidden">
+                    <use href="./img/icon.svg#facebook"></use>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/mamsmakanamaka/" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="contact-block__instagram contact--hidden">
+                    <use href="./img/icon.svg#instagram"></use>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/user/McDonaldsPoland" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="contact-block__youtube contact--hidden">
+                    <use href="./img/icon.svg#youtube"></use>
+                </svg>
+            </a>
+            <button type="button" class="open_modal button--header button__general" data-modal>
+                <p>KONTAKT</p>
+                <svg>
+                    <use href="./img/icon.svg#mail"></use>
+                </svg>
+            </button>
+            <button type="button" class="open_modal button__header--mobile" data-modal>
+                <svg>
+                    <use href="./img/icon.svg#mail"></use>
+                </svg>
+            </button>
         </div>
+
     </header>
-    <!-- AD CONTAINER -->
-    <main>
-        <div class="slideshow-container">
+    <!-- AD CONTAINER
+    <main> -->
+    <!-- <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="./img/01-slider-desktop-2700x850-bg-3.jpg" alt="add banner"
                     style="width: 100%; height: 200%" />
@@ -85,9 +89,9 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-        </div>
-        <!-- MENU -->
-        <section id="menu">
+        </div> -->
+    <!-- MENU -->
+    <!-- <section id="menu">
             <h2 class="nasze-menu">Nasze menu</h2>
             <p class="pretitle">nasze produkty</p>
             <h6 class="title">Regularne</h6>
@@ -174,9 +178,9 @@
                     <p class="product-card__name">Muffin Twarożek</p>
                 </li>
             </ul>
-        </section>
-        <!-- TOP LEADERS -->
-        <section id="leaders">
+        </section> -->
+    <!-- TOP LEADERS -->
+    <!-- <section id="leaders">
             <p class="pretitle">poznaj nas</p>
             <h2 class="title">Nasi najlepszi kierownicy</h2>
             <ul class="kierownicy">
@@ -228,57 +232,56 @@
                     </p>
                 </li>
             </ul>
-        </section>
-        <!-- PRACA/DELIVERY/APP/RESTARAUNT -->
-        <section>
-            <ul class="other">
-                <li class="delivery" id="mcdelivery">
-                    <div class="delivery__image"></div>
-                    <div class="delivery__item">
-                        <h6>DOSTARCZAMY</h6>
-                        <p>wspólne chwile</p>
-                        <button class="button--delivery" type="button">
-                            <p class="delivery__span">SPRAWDŹ DOSTAWĘ W McDELIVERY</p>
-                            <svg class="delivery__svg">
-                                <use href="./img/icon.svg#Layer_2"></use>
-                            </svg>
-                        </button>
+        </section> -->
+    <!-- PRACA/DELIVERY/APP/RESTARAUNT -->
+    <!-- <section>
+        <ul class="other">
+            <li class="delivery" id="mcdelivery">
+                <div class="delivery__image"></div>
+                <div class="delivery__item">
+                    <h6>DOSTARCZAMY</h6>
+                    <p>wspólne chwile</p>
+                    <button class="button--delivery" type="button">
+                        <p class="delivery__span">SPRAWDŹ DOSTAWĘ W McDELIVERY</p>
+                        <svg class="delivery__svg">
+                            <use href="./img/icon.svg#Layer_2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </li>
+            <li class="info-app">
+                <h6>Pobierz aplikację mobilną</h6>
+                <p>Miej McDonald’s zawsze w zasięgu ręki!</p>
+                <div>
+                    <a href=""><img src="./img/appstore.png" class="app" alt="appstore" width="155" height="46" /></a>
+                    <a href=""><img src="./img/googlestore.png" class="app" alt="playmarket" /></a>
+                </div>
+            </li>
+            <li class="info-restaraunt" id="search-rest">
+                <h6>Wyszukaj restauracje:</h6>
+                <form class="praca-search">
+                    <div class="input__wrap">
+                        <svg>
+                            <use href="./img/icon.svg#maps"></use>
+                        </svg>
+                        <input type="search" class="" id="search" name="feedback" placeholder="Ulica, Miasto" rows="1"
+                            required minlength="3" maxlength="20">
                     </div>
-                </li>
-                <li class="info-app">
-                    <h6>Pobierz aplikację mobilną</h6>
-                    <p>Miej McDonald’s zawsze w zasięgu ręki!</p>
-                    <div>
-                        <a href=""><img src="./img/appstore.png" class="app" alt="appstore" width="155"
-                                height="46" /></a>
-                        <a href=""><img src="./img/googlestore.png" class="app" alt="playmarket" /></a>
-                    </div>
-                </li>
-                <li class="info-restaraunt" id="search-rest">
-                    <h6>Wyszukaj restauracje:</h6>
-                    <form class="praca-search">
-                        <div class="input__wrap">
-                            <svg>
-                                <use href="./img/icon.svg#maps"></use>
-                            </svg>
-                            <input type="search" class="" id="search" name="feedback" placeholder="Ulica, Miasto"
-                                rows="1" required minlength="3" maxlength="20">
-                        </div>
-                    </form>
-                    <button class="min--button" type="button" data-modal-open>Szukaj</button>
-                </li>
-                <li class="job" id="job">
-                    <div class="job__image"></div>
-                    <div class="job__item">
-                        <p>Poznaj nas i dołącz do zespołu</p>
-                        <button type="button" class="min--button">Praca w McDonalds</button>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
+                </form>
+                <button class="min--button" type="button" data-modal-open>Szukaj</button>
+            </li>
+            <li class="job" id="job">
+                <div class="job__image"></div>
+                <div class="job__item">
+                    <p>Poznaj nas i dołącz do zespołu</p>
+                    <button type="button" class="min--button">Praca w McDonalds</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    </main> -->
     <!-- FOOTER -->
-    <footer>
+    <!-- <footer>
         <nav>
             <ul class="footer__top">
                 <li><a class="footer__nav" href="">NASZE MENU</a></li>
@@ -304,7 +307,7 @@
             </li>
         </ul>
     </footer>
-                <div id='modal' class=" modal bounceIn">
+    <div id='modal' class=" modal bounceIn">
                 <div class="modal_txt">
                     <form>
                         <div class="close-modal" id="close_modal">+</div>
@@ -323,10 +326,10 @@
                                 placeholder="jan.kowalski@mcdonalds.com" required>
                         </label>
                         <label class="label-set textarea-set" for="feedback">Treść:
-                            <textarea class="textarea-set input-set" id="feedback" rows="10"
+                            <textarea class="textarea-set input-set" id="feedback" rows="5"
                                 placeholder="Twoja wiadomość" required></textarea>
                         </label>
-                        <button class="min--button submit--form" type="submit">Wyślij</button>
+                        <button class="button__general min--button submit--form" type="submit">Wyślij</button>
                         <a class="linktel" href="tel:+48790769015">Masz dodadkowe pytania? Zadzwoń!
                             <svg class="phone-link-icon">
                                 <use href="./img/icon.svg#phone"></use>
@@ -334,9 +337,9 @@
                         </a>
                     </form>
                 </div>
-                </div>
+                </div> -->
 </body>
-<script src="js/adblock.js"></script>
-<script src="./js/modal.js"></script>
+<!-- <script src="js/adblock.js"></script>
+<script src="./js/modal.js"></script> -->
 
 </html>

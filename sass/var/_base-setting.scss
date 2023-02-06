@@ -1,25 +1,27 @@
 html {
     scroll-behavior: smooth;
 
-    &::-webkit-scrollbar {
-        width: 8px;
-        background-color: rgb(185, 185, 185);
-    }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: rgb(68, 68, 68);
-        border-radius: 5px;
-    }
+    // &::-webkit-scrollbar {
+    //     width: 8px;
+    //     background-color: rgb(185, 185, 185);
 
-    &::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(68, 68, 68, 0.553);
-        border-radius: 5px;
-    }
+    // }
 
-    &::-webkit-scrollbar-thumb:active {
-        background-color: rgba(68, 68, 68, 0.553);
-        border-radius: 5px;
-    }
+    // &::-webkit-scrollbar-thumb {
+    //     background-color: rgb(68, 68, 68);
+    //     border-radius: 5px;
+    // }
+
+    // &::-webkit-scrollbar-thumb:hover {
+    //     background-color: rgba(68, 68, 68, 0.553);
+    //     border-radius: 5px;
+    // }
+
+    // &::-webkit-scrollbar-thumb:active {
+    //     background-color: rgba(68, 68, 68, 0.553);
+    //     border-radius: 5px;
+    // }
 }
 
 li {
@@ -29,6 +31,7 @@ li {
 body {
     font-family: 'Jockey One', sans-serif;
     font-family: 'Kanit', sans-serif;
+    margin: 0;
 }
 
 section {

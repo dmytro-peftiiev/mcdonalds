@@ -3,6 +3,8 @@ footer {
     flex-direction: column;
     align-items: center;
     background-image: url(../img/footerbackground.jpg);
+    width: 90vw;
+    margin: 0;
 
 }
 
@@ -12,6 +14,12 @@ footer {
     gap: 2em;
     padding: 0;
     margin: 3em;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 .footer__nav {
@@ -36,6 +44,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    width: 85vw;
+    margin: 0;
 }
 
 .info__item {
@@ -46,4 +57,5 @@ footer {
     padding: 0;
     background-color: $akcentColor;
     color: $primaryColor;
+    width: 80vw;
 }
