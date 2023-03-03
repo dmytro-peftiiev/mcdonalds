@@ -20,7 +20,6 @@
 }
 
 .modal {
-
     position: fixed;
     bottom: -100;
 }
@@ -29,7 +28,7 @@
     top: 1em;
     background-color: white;
     color: #000000;
-    width: max-content;
+    width: 30%;
     height: max-content;
     padding: 30px;
     position: relative;
@@ -45,27 +44,6 @@
     }
 
 }
-
-// label {
-//     display: flex;
-//     flex-direction: column;
-
-// }
-
-// .label-set {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-
-//     & svg {
-//         position: absolute;
-//         width: 20px;
-//         height: 20px;
-//         margin: 0;
-//         padding: 0;
-//         bottom: 0.05em;
-//     }
-// }
 
 
 
@@ -149,36 +127,4 @@
     width: 1.4em;
     height: 1.4em;
     opacity: 0%;
-
-
 }
-
-// .modal {
-//     display: none;
-//     background: #337AB7;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     z-index: 99999;
-// }
-
-// .modal_vis {
-//     display: block;
-// }
-
-// .body_block {
-//     overflow: hidden;
-//     margin-right: 17px;
-// }
-
-
-
-// .modal_txt {
-//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
-//     background: #FFF;
-//     padding: 30px;
-//     margin: 100px auto;
-//     max-width: 800px;
-// }

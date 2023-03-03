@@ -3,7 +3,7 @@ label {
     position: relative;
     display: flex;
     flex-direction: column;
-    color: $primaryColor;
+    color: black;
     font-weight: 300;
     font-size: 1.2em;
 
@@ -24,7 +24,7 @@ input {
     border-bottom: 2px solid $akcentColor;
     font-size: 20px;
     font-weight: 300;
-    width: 10em;
+    min-width: 100%;
     padding-left: 25px;
     margin: 0;
 
@@ -46,11 +46,11 @@ textarea {
     outline: none;
     border: none;
     background-color: rgba(62, 62, 62, 0.01);
-    border-bottom: 2px solid $akcentColor;
+    border-bottom: 2px solid #ffbb0d;
     font-size: 20px;
     font-weight: 200;
     font-style: italic;
-    width: 10em;
+    min-width: 100%;
     margin: 0;
     resize: none;
 

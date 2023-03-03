@@ -22,72 +22,24 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="top-nav">
+    <header>
         <a class="logo__set" href="./index.html">
             <svg class="logo__icon">
                 <use href="./img/icon.svg#logo"></use>
             </svg>
         </a>
         <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
+        <label class='menu__button-container' for="menu-toggle">
+            <div class='menu__button'></div>
         </label>
-        <ul class="menu">
-            <li><a class="nav__item" href="#menu">Produkty</a></li>
-            <li><a class="nav__item" href="#leaders">Liderzy</a></li>
-            <li><a class="nav__item" href="#mcdelivery">McDelivery</a></li>
-            <li><a class="nav__item" href="#job">Praca</a></li>
-        </ul>
-
-        <div class="contact-block">
-            <a href="https://www.facebook.com/McDonaldsPolska/" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="contact-block__facebook contact--hidden">
-                    <use href="./img/icon.svg#facebook"></use>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/mamsmakanamaka/" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="contact-block__instagram contact--hidden">
-                    <use href="./img/icon.svg#instagram"></use>
-                </svg>
-            </a>
-            <a href="https://www.youtube.com/user/McDonaldsPoland" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="contact-block__youtube contact--hidden">
-                    <use href="./img/icon.svg#youtube"></use>
-                </svg>
-            </a>
-            <button type="button" class="open_modal button--header button__general" data-modal>
-                <p>KONTAKT</p>
-                <svg>
-                    <use href="./img/icon.svg#mail"></use>
-                </svg>
-            </button>
-            <button type="button" class="open_modal button__header--mobile" data-modal>
-                <svg>
-                    <use href="./img/icon.svg#mail"></use>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <!-- <nav class="nav">
-            <div class="hamburger__buttons">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </div>
-
-            <ul>
+        <nav class="menu">
+            <ul class="menu">
                 <li><a class="nav__item" href="#menu">Produkty</a></li>
                 <li><a class="nav__item" href="#leaders">Liderzy</a></li>
                 <li><a class="nav__item" href="#mcdelivery">McDelivery</a></li>
                 <li><a class="nav__item" href="#job">Praca</a></li>
             </ul>
         </nav>
-        <a class="logo__set">
-            <svg class="logo__icon">
-                <use href="./img/icon.svg#logo"></use>
-            </svg>
-        </a>
         <div class="contact-block">
             <a href="https://www.facebook.com/McDonaldsPolska/" target="_blank" rel="noopener noreferrer nofollow">
                 <svg class="contact-block__facebook contact--hidden">
@@ -110,74 +62,67 @@
                     <use href="./img/icon.svg#mail"></use>
                 </svg>
             </button>
-            <button type="button" class="open_modal button__header--mobile" data-modal>
+            <button type="button" class="open_modal button--header__mobile" data-modal>
                 <svg>
                     <use href="./img/icon.svg#mail"></use>
                 </svg>
             </button>
         </div>
-
-    </header> -->
-    <!-- AD CONTAINER
-    <main> -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="./img/01-slider-desktop-2700x850-bg-3.jpg" alt="add banner" style="width: 100%; height: 200%" />
-            <div class="number-text">Zbierz zimową kolekcję Drawala</div>
+    </header>
+    <!-- AD CONTAINER -->
+    <main>
+        <div class="slideshow__container">
+            <div class="mySlides fade">
+                <img src="./img/01-slider-desktop-2700x850-bg-3.jpg" alt="add banner"
+                    style="width: 100%; height: 200%" />
+                <div class="number-text">Zbierz zimową kolekcję Drawala</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./img/125190-zestawdowyboru-mundial-slajder-desktop-statyk.jpg" alt="add banner"
+                    style="width: 100%" />
+                <div class="number-text">Gotowy zestaw w dobrej cenie</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./img/126018-mcd-rmhc-mchappy-day-slajder-desktop-bg-1.jpg" alt="add banner"
+                    style="width: 100%" />
+                <div class="number-text">Pomaganie dobrze smakuje</div>
+            </div>
+            <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
-
-        <div class="mySlides fade">
-            <img src="./img/125190-zestawdowyboru-mundial-slajder-desktop-statyk.jpg" alt="add banner"
-                style="width: 100%" />
-            <div class="number-text">Gotowy zestaw w dobrej cenie</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="./img/126018-mcd-rmhc-mchappy-day-slajder-desktop-bg-1.jpg" alt="add banner"
-                style="width: 100%" />
-            <div class="number-text">Pomaganie dobrze smakuje</div>
-        </div>
-        <div style="text-align: center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-
-
-    <!-- MENU -->
-    <!-- <section id="menu">
+        <!-- NASZE MENU -->
+        <section id="menu">
             <h2 class="nasze-menu">Nasze menu</h2>
             <p class="pretitle">nasze produkty</p>
             <h6 class="title">Regularne</h6>
             <ul class="product-card__block">
                 <li class="hover-area">
                     <div class="product-card">
-                        <img class="product-card__image" src="./img/chikenbox.jpg" alt="Chiken Box" width="378"
-                            height="304" />
+                        <img class="product-card__image" src="./img/chikenbox.jpg" alt="Chiken Box" />
                         <p class="product-card__price">20 pln</p>
                     </div>
                     <p class="product-card__name">Chiken Box</p>
                 </li>
                 <li class="hover-area">
                     <div class="product-card">
-                        <img class="product-card__image" src="./img/big-mac2.jpg" alt="Chiken Box" width="400"
-                            height="304" />
+                        <img class="product-card__image" src="./img/big-mac2.jpg" alt="Chiken Box" />
                         <p class="product-card__price">17 pln</p>
                     </div>
                     <p class="product-card__name">BigMac</p>
                 </li>
                 <li class="hover-area">
                     <div class="product-card">
-                        <img class="product-card__image" src="./img/kurczkburger.jpg" alt="Chiken Box" width="400"
-                            height="304" />
+                        <img class="product-card__image" src="./img/kurczkburger.jpg" alt="Chiken Box" />
                         <p class="product-card__price">9 pln</p>
                     </div>
                     <p class="product-card__name">Kurczakburger</p>
                 </li>
                 <li class="hover-area">
                     <div class="product-card">
-                        <img class="product-card__image" src="./img/hamburger2.jpg" alt="Chiken Box" width="400"
-                            height="304" />
+                        <img class="product-card__image" src="./img/hamburger2.jpg" alt="Chiken Box" />
                         <p class="product-card__price">8 pln</p>
                     </div>
                     <p class="product-card__name">Hamburger</p>
@@ -232,110 +177,111 @@
                     <p class="product-card__name">Muffin Twarożek</p>
                 </li>
             </ul>
-        </section> -->
-    <!-- TOP LEADERS -->
-    <!-- <section id="leaders">
+        </section>
+
+        <section id="leaders">
             <p class="pretitle">poznaj nas</p>
             <h2 class="title">Nasi najlepszi kierownicy</h2>
             <ul class="kierownicy">
-                <li class="kierownik">
-                    <div class="first-kierownik__main">
-                        <img src="./img/mcd-praca-emilia.png" alt="Emilia" width="200" height="300" />
-                        <p class="first-kierownik__info">
+                <li class="lider">
+                    <div class="lider__main">
+                        <img class="lider__img" src="./img/mcd-praca-emilia.png" alt="Emilia" width="200"
+                            height="300" />
+                        <p class="kierownik__info">
                             W McDonald’s jest już prawie dwa lata, a jako manager koordynuje
                             pracę całego zespołu. Skąd pomysł na Maka? Mateusz rozpoczął
                             studia na kierunku Automatyka i Robotyka i szukał miejsca, w
                             którym elastyczny grafik umożliwi mu połączenie pracy z nauką.
                         </p>
                     </div>
-                    <h3 class="first-kierownik__name">Emilia Pieńkowska</h3>
-                    <p class="first-kierownik__place">
+                    <h3 class="lider__name">Emilia Pieńkowska</h3>
+                    <p class="lider__place">
                         Kierownik restauracji Warszawa Zachodnia
                     </p>
                 </li>
-                <li class="kierownik">
-                    <div class="second-kierownik__main">
-                        <img src="./img/mcd-praca-igor.png" alt="Igor" width="200" height="300" />
-                        <p class="second-kierownik__info">
+                <li class="lider">
+                    <div class="lider__main">
+                        <img class="lider__img" src="./img/mcd-praca-igor.png" alt="Igor" width="200" height="300" />
+                        <p class="kierownik__info">
                             W McDonald’s jest już prawie dwa lata, a jako manager koordynuje
                             pracę całego zespołu. Skąd pomysł na Maka? Mateusz rozpoczął
                             studia na kierunku Automatyka i Robotyka i szukał miejsca, w
                             którym elastyczny grafik umożliwi mu połączenie pracy z nauką.
                         </p>
                     </div>
-                    <h3 class="second-kierownik__name">Igor Gbiorczyk</h3>
-                    <p class="second-kierownik__place">
+                    <h3 class="lider__name">Igor Gbiorczyk</h3>
+                    <p class="lider__place">
                         Kierownik restauracji Poznań Dworzec Główny
                     </p>
                 </li>
-                <li class="kierownik">
-                    <div class="third-kierownik__main">
-                        <img src="./img/mcd-praca-patryk.png" alt="Patryk" width="200" height="300" />
-                        <p class="third-kierownik__info">
-                            Co Szymon najbardziej lubi w swojej pracy? Kontakt z ludźmi.
-                            <span class="talk">
-                                – Spotykam różnorodne osoby, z którymi mogę porozmawiać.
-                                Uwielbiam stałych gości, którzy przychodzą do Maka i mnie
-                                rozpoznają, dzięki czemu tworzy się taka mała rodzina. Są
-                                trochę jak ja – też zostają na dłużej. </span>– opowiada.
+                <li class="lider">
+                    <div class="lider__main">
+                        <img class="lider__img" src="./img/mcd-praca-patryk.png" alt="Patryk" width="200"
+                            height="300" />
+                        <p class="kierownik__info"> Co Szymon najbardziej lubi w swojej pracy? Kontakt z ludźmi.
+                            – Spotykam różnorodne osoby, z którymi mogę porozmawiać.
+                            Uwielbiam stałych gości, którzy przychodzą do Maka i mnie
+                            rozpoznają, dzięki czemu tworzy się taka mała rodzina. Są
+                            trochę jak ja – też zostają na dłużej.– opowiada.
                         </p>
                     </div>
-                    <h3 class="third-kierownik__name">Patryk Duński</h3>
-                    <p class="third-kierownik__place">
+                    <h3 class="lider__name">Patryk Duński</h3>
+                    <p class="lider__place">
                         Kierownik restauracji Gdańsk Zielone Arkady
                     </p>
                 </li>
             </ul>
-        </section> -->
-    <!-- PRACA/DELIVERY/APP/RESTARAUNT -->
-    <!-- <section>
-        <ul class="other">
-            <li class="delivery" id="mcdelivery">
-                <div class="delivery__image"></div>
-                <div class="delivery__item">
-                    <h6>DOSTARCZAMY</h6>
-                    <p>wspólne chwile</p>
-                    <button class="button--delivery" type="button">
-                        <p class="delivery__span">SPRAWDŹ DOSTAWĘ W McDELIVERY</p>
-                        <svg class="delivery__svg">
-                            <use href="./img/icon.svg#Layer_2"></use>
-                        </svg>
-                    </button>
-                </div>
-            </li>
-            <li class="info-app">
-                <h6>Pobierz aplikację mobilną</h6>
-                <p>Miej McDonald’s zawsze w zasięgu ręki!</p>
-                <div>
-                    <a href=""><img src="./img/appstore.png" class="app" alt="appstore" width="155" height="46" /></a>
-                    <a href=""><img src="./img/googlestore.png" class="app" alt="playmarket" /></a>
-                </div>
-            </li>
-            <li class="info-restaraunt" id="search-rest">
-                <h6>Wyszukaj restauracje:</h6>
-                <form class="praca-search">
-                    <div class="input__wrap">
-                        <svg>
-                            <use href="./img/icon.svg#maps"></use>
-                        </svg>
-                        <input type="search" class="" id="search" name="feedback" placeholder="Ulica, Miasto" rows="1"
-                            required minlength="3" maxlength="20">
+        </section>
+        <!-- PRACA/DELIVERY/APP/RESTARAUNT -->
+        <section>
+            <ul class="other">
+                <li class="delivery geom" id="mcdelivery">
+                    <div class="delivery__image"></div>
+                    <div class="delivery__item">
+                        <h6>DOSTARCZAMY</h6>
+                        <p>wspólne chwile</p>
+                        <button class="button--delivery button__general" type="button">
+                            <p class="delivery__span">SPRAWDŹ DOSTAWĘ W McDELIVERY</p>
+                            <svg class="delivery__svg">
+                                <use href="./img/icon.svg#Layer_2"></use>
+                            </svg>
+                        </button>
                     </div>
-                </form>
-                <button class="min--button" type="button" data-modal-open>Szukaj</button>
-            </li>
-            <li class="job" id="job">
-                <div class="job__image"></div>
-                <div class="job__item">
-                    <p>Poznaj nas i dołącz do zespołu</p>
-                    <button type="button" class="min--button">Praca w McDonalds</button>
-                </div>
-            </li>
-        </ul>
-    </section>
-    </main> -->
+                </li>
+                <li class="info-app geom">
+                    <h6>Pobierz aplikację mobilną</h6>
+                    <p>Miej McDonald’s zawsze w zasięgu ręki!</p>
+                    <div>
+                        <a href="" class="aapp"><img src="./img/appstore.png" class="app" alt="appstore" width="155"
+                                height="46" /></a>
+                        <a href="" class="aapp"><img src="./img/googlestore.png" class="app" alt="playmarket" /></a>
+                    </div>
+                </li>
+                <li class="info-restaraunt geom" id="search-rest">
+                    <h6>Wyszukaj restauracje:</h6>
+                    <form class="praca-search">
+                        <div class="input__wrap">
+                            <svg>
+                                <use href="./img/icon.svg#maps"></use>
+                            </svg>
+                            <input type="search" class="" id="search" name="feedback" placeholder="Ulica, Miasto"
+                                rows="1" required minlength="3" maxlength="20">
+                        </div>
+                    </form>
+                    <button class="min--button button__general" type="button" data-modal-open>Szukaj</button>
+                </li>
+                <li class="job geom" id="job">
+                    <div class="job__image"></div>
+                    <div class="job__item">
+                        <p>Poznaj nas i dołącz do zespołu</p>
+                        <button type="button" class="min--button button__general">Praca w McDonalds</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
     <!-- FOOTER -->
-    <!-- <footer>
+    <footer>
         <nav>
             <ul class="footer__top">
                 <li><a class="footer__nav" href="">NASZE MENU</a></li>
@@ -353,7 +299,7 @@
                 &#169; 2022 McDonald’s Corporation. Prawa do znaków towarowych
                 zastrzeżone.
             </li>
-            <li class="info__item"">
+            <li class="info__item">
                 McDonald’s Polska Sp. z o. o. z siedzibą w Warszawie ul. Marynarska
                 15, 02-674 Warszawa Sąd Rejonowy dla m. st. Warszawy, XIII Wydz.
                 Gospodarczy Krajowego Rejestru Sądowego, nr KRS 0000097409 NIP
@@ -362,36 +308,36 @@
         </ul>
     </footer>
     <div id='modal' class=" modal bounceIn">
-                <div class="modal_txt">
-                    <form>
-                        <div class="close-modal" id="close_modal">+</div>
-                        <label class="label-set" for="users-name">Imie, Nazwisko:
-                            <svg>
-                                <use href="./img/icon.svg#men"></use>
-                            </svg>
-                            <input class="input-set" type="text" id="users-name" placeholder="Jan Kowalski" required↩
-                                minlength="3">
-                        </label>
-                        <label class="label-set" for="users-email">E-mail:
-                            <svg>
-                                <use href="./img/icon.svg#mail"></use>
-                            </svg>
-                            <input class="input-set" type="email" id="users-email"
-                                placeholder="jan.kowalski@mcdonalds.com" required>
-                        </label>
-                        <label class="label-set textarea-set" for="feedback">Treść:
-                            <textarea class="textarea-set input-set" id="feedback" rows="5"
-                                placeholder="Twoja wiadomość" required></textarea>
-                        </label>
-                        <button class="button__general min--button submit--form" type="submit">Wyślij</button>
-                        <a class="linktel" href="tel:+48790769015">Masz dodadkowe pytania? Zadzwoń!
-                            <svg class="phone-link-icon">
-                                <use href="./img/icon.svg#phone"></use>
-                            </svg>
-                        </a>
-                    </form>
-                </div>
-                </div> -->
+        <div class="modal_txt">
+            <form>
+                <div class="close-modal" id="close_modal">+</div>
+                <label class="label-set" for="users-name">Imie, Nazwisko:
+                    <svg>
+                        <use href="./img/icon.svg#men"></use>
+                    </svg>
+                    <input class="input-set" type="text" id="users-name" placeholder="Jan Kowalski" required↩
+                        minlength="3">
+                </label>
+                <label class="label-set" for="users-email">E-mail:
+                    <svg>
+                        <use href="./img/icon.svg#mail"></use>
+                    </svg>
+                    <input class="input-set" type="email" id="users-email" placeholder="jan.kowalski@mcdonalds.com"
+                        required>
+                </label>
+                <label class="label-set textarea-set" for="feedback">Treść:
+                    <textarea class="textarea-set input-set" id="feedback" rows="5" placeholder="Twoja wiadomość"
+                        required></textarea>
+                </label>
+                <button class="button__general min--button submit--form" type="submit">Wyślij</button>
+                <a class="linktel" href="tel:+48790769015">Masz dodadkowe pytania? Zadzwoń!
+                    <svg class="phone-link-icon">
+                        <use href="./img/icon.svg#phone"></use>
+                    </svg>
+                </a>
+            </form>
+        </div>
+    </div>
 </body>
 <script src="js/adblock.js"></script>
 <script src="./js/modal.js"></script>

@@ -1,231 +1,111 @@
 // GENERAL---------------------------------------------------
 .kierownicy {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 96vw;
+    align-items: center;
+    max-width: 99vw;
+    height: auto;
     padding: 0;
-    padding-top: 1%;
-    margin: 10px;
-    cursor: default;
+    margin: 1em 0em 1em 0em;
 }
 
-.kierownik {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.lider {
+    padding: 0;
+    margin: auto;
+    flex-basis: 100%;
+
+    @media screen and (min-width: 767px) {
+        flex-basis: 30%;
+    }
+}
+
+.lider__main {
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     background-image: linear-gradient(55deg, rgba(255, 255, 255, 0) 17%, rgba(255, 210, 0, 1) 51%);
     border-radius: 57% 43% 100% 0% / 100% 57% 43% 0%;
-}
-
-// FIRST LID---------------------------------------------------
-.first-kierownik__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 100%;
-    transform: scale(107%);
-    transition: transform 600ms linear;
-    position: relative;
+    height: 18em;
+    max-width: 90vw;
 
-    &:hover {
-        transform: scale(115%);
+
+
+    img {
+        position: absolute;
+        left: 30%;
+        transition: all 300ms linear;
+        z-index: 1;
+        transform: scale(100%);
     }
 
-    &:hover .first-kierownik__info {
+
+    p {
+        margin: 0;
+        width: 55%;
+        position: absolute;
+        right: 3.8em;
+        top: 1em;
         visibility: inherit;
         background-color: $secondColor;
-        opacity: 100%;
-        width: 90%;
-        height: max-content;
+        opacity: 0%;
         padding: 5px 5px 5px 10px;
-        right: -57%;
-        z-index: -1;
-        font-size: 20px;
+        font-size: 1.1em;
         color: $primaryColor;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 8px 8px 24px -3px $primaryColor;
-        position: absolute;
+        transition: all 300ms linear;
     }
 }
 
-.first-kierownik__info {
-    visibility: hidden;
-    background-color: $secondColor;
+.lider:hover {
+    .lider__img {
+        left: -6%;
+        transform: scale(110%);
+    }
+
+    .lider__name {
+        width: 100%;
+    }
+}
+
+.lider:hover .kierownik__info {
+    margin: 0;
+    width: 55%;
     position: absolute;
-    opacity: 0%;
-    width: 90%;
+    right: 3.8em;
+    top: 1em;
+    visibility: inherit;
+    background-color: $secondColor;
+    opacity: 100%;
     padding: 5px 5px 5px 10px;
-    right: -57%;
-    height: max-content;
-    z-index: -1;
-    font-size: 20px;
+    font-size: 1.1em;
     color: $primaryColor;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 8px 24px -3px $primaryColor;
-    transition: opacity 600ms linear;
 }
 
-.first-kierownik__name {
-    background-color: $greenColor;
-    color: $secondColor;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
-}
-
-.first-kierownik__place {
-    background-color: $secondColor;
-    color: $primaryColor;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 10px;
-    margin: 0;
-}
-
-// SECOND LID---------------------------------------------------
-.second-kierownik__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(107%);
-    transition: transform 600ms linear;
+.lider__name {
     position: relative;
-
-    &:hover {
-        transform: scale(115%);
-    }
-
-    &:hover .second-kierownik__info {
-        visibility: inherit;
-        background-color: $secondColor;
-        opacity: 100%;
-        width: 90%;
-        height: max-content;
-        padding: 5px 5px 5px 10px;
-        right: -55%;
-        z-index: -1;
-        font-size: 20px;
-        color: $primaryColor;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 8px 8px 24px -3px $primaryColor;
-        position: absolute;
-    }
-}
-
-.second-kierownik__info {
-    visibility: hidden;
-    background-color: $secondColor;
-    position: absolute;
-    opacity: 0%;
-    width: 90%;
-    padding: 5px 5px 5px 10px;
-    right: -55%;
-    height: max-content;
-    z-index: -1;
-    font-size: 20px;
-    color: $primaryColor;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 8px 8px 24px -3px $primaryColor;
-    transition: opacity 600ms linear;
-}
-
-.second-kierownik__name {
     background-color: $greenColor;
+    font-size: 2em;
     color: $secondColor;
-    font-size: 30px;
+    font-weight: 300;
     text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
+    padding: 0.2em 0em 0.2em 0em;
+    margin: 0px;
+    z-index: 3;
+    width: 70%;
+    transition: all 300ms linear;
 }
 
-.second-kierownik__place {
-    background-color: $secondColor;
+.lider__place {
+    background-color: rgba(128, 128, 128, 0.858)(128, 128, 128, 0.605);
+    font-size: 1.4em;
     color: $primaryColor;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 10px;
-    margin: 0;
-}
-
-// THIRD LID---------------------------------------------------
-.third-kierownik__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 300;
+    padding: 0.1em 0em 0.1em 0em;
+    margin: 0px;
     width: 100%;
-    height: 100%;
-    transform: scale(107%);
-    transition: transform 600ms linear;
-    position: relative;
-
-    &:hover {
-        transform: scale(115%);
-    }
-
-    &:hover .third-kierownik__info {
-        visibility: inherit;
-        background-color: $secondColor;
-        opacity: 100%;
-        width: 90%;
-        height: max-content;
-        padding: 5px 5px 5px 10px;
-        left: -48%;
-        z-index: -1;
-        font-size: 20px;
-        color: $primaryColor;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 8px 8px 24px -3px $primaryColor;
-        position: absolute;
-    }
-}
-
-.third-kierownik__info {
-    visibility: hidden;
-    background-color: $secondColor;
-    position: absolute;
-    opacity: 0%;
-    width: 90%;
-    padding: 5px 5px 5px 10px;
-    left: -48%;
-    height: max-content;
-    z-index: -1;
-    font-size: 20px;
-    color: $primaryColor;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 8px 8px 24px -3px $primaryColor;
-    transition: opacity 600ms linear;
-
-    .talk {
-        font-style: italic;
-    }
-}
-
-.third-kierownik__name {
-    background-color: $greenColor;
-    color: $secondColor;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
-}
-
-.third-kierownik__place {
-    background-color: $secondColor;
-    color: $primaryColor;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 10px;
-    margin: 0;
+    transition: all 300ms linear;
 }

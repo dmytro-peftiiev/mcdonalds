@@ -2,13 +2,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 100px 0px 0px 0px;
     padding: 0;
 }
 
+.geom {
+    min-width: 100%;
+    min-height: 50vh;
+
+    @media screen and (min-width: 767px) {
+        min-width: 50%;
+    }
+}
+
 .delivery {
-    width: 50%;
-    height: 50vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -61,8 +67,9 @@
 
 .button--delivery {
     margin-top: 15px;
-    width: 24em;
+    width: 19em;
     height: 2em;
+    max-width: 99vw;
     background-color: $akcentColor;
 
     &:hover p {
@@ -83,10 +90,11 @@
     }
 
     & p {
-        top: 0.2em;
+        top: 0.4em;
         left: 1.2em;
         color: $primaryColor;
         font-weight: 700;
+        font-size: 0.98em;
     }
 
     & svg {
@@ -98,20 +106,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .info-app {
-    width: 50%;
-    height: 50vh;
     background-color: #ffbc0d;
     display: flex;
     flex-direction: column;
@@ -141,10 +136,7 @@
 }
 
 
-
 .info-restaraunt {
-    width: 50%;
-    height: 50vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -158,11 +150,6 @@
         margin-bottom: 3%;
     }
 }
-
-
-
-
-
 
 .input__wrap {
     position: relative;
@@ -179,13 +166,7 @@
     }
 }
 
-
-
-
-
 .job {
-    width: 50%;
-    height: 50vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -196,8 +177,6 @@
         transform: scale(110%);
     }
 }
-
-
 
 .job__image {
     width: 100%;
@@ -210,8 +189,6 @@
     transform: scale(100%);
     transition: transform 2s ease-in-out;
     position: relative;
-
-
 }
 
 .job__item {
